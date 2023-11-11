@@ -5,28 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desafio do Herói Iniciante</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Desafio do Herói</h1>
-  <div>
-    <h2>Verificando o nível do Herói!</h2>
-    <p>Informe o nome do seu Herói: <input type="text" name="nameHero" id="hero-name"
-        placeholder="Digite o nome do seu herói">
-    </p>
-    <p>Informe o nível de XP do seu Herói: <input type="number" name="lvlHero" id="hero-level"
-        placeholder="Digite a XP do seu herói"></p>
-    <input type="button" value="Verificar" onclick="calcularLevel()">
-  </div>
-  <br>
-  <div id="resultN">
+  <header>
+    <h1>Desafio do Herói</h1>
+  </header>
+  <main>
+    <section id="verify">
+      <div>
+        <h2 id="titlle-verify">Verificando o nível do Herói!</h2>
+        <p id="verify-name">
+          <label for="hero-name">Informe o nome do seu Herói: <input type="text" name="nameHero" id="hero-name"
+              placeholder="Digite o nome do seu herói"></label>
+        </p>
+        <p id="verify-level">
+          <label for="hero-level">Informe o nível de XP do seu Herói: <input type="number" name="lvlHero"
+              id="hero-level" placeholder="Digite a XP do seu herói"></label>
+          <input type="button" value="Verificar" onclick="calcularLevel()">
+        </p>
+      </div>
+    </section>
+    <br>
+    <section id="resultVerify">
+      <div id="resultN">
 
-  </div>
-  <br>
-  <div id="resultL">
+      </div>
+      <br>
+      <div id="resultL">
 
-  </div>
-
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Edvan Sabino</p>
+  </footer>
   <script src="scripts.js"></script>
 </body>
 
