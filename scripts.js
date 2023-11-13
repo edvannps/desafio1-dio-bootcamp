@@ -46,5 +46,6 @@ function calcularLevel() {
     resultName.innerHTML = `O herói de nome <strong>${heroName.value}</strong> está no nível <strong>${resLevelHero}</strong>`;
     resultName.style.textAlign = "center";
     resImage.appendChild(imageHero);
-  } while (resImage.firstChild);
+    let restConfirm = document.querySelector("confirm-restart");
+  } while (restConfirm.value === "S");
 }
